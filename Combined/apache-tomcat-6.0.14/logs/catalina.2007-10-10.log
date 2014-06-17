@@ -1,0 +1,275 @@
+Oct 10, 2007 12:50:20 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 12:50:20 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 12:50:20 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2479 ms
+Oct 10, 2007 12:50:21 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 12:50:21 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 12:50:31 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 12:50:31 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 12:50:31 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/197  config=null
+Oct 10, 2007 12:50:31 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 10948 ms
+Oct 10, 2007 1:04:46 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:04:47 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:04:48 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:08:47 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:08:47 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:08:47 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2480 ms
+Oct 10, 2007 1:08:48 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:08:48 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:08:58 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:08:58 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:08:58 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/304  config=null
+Oct 10, 2007 1:08:59 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11304 ms
+Oct 10, 2007 1:15:58 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/OMEN]
+Oct 10, 2007 1:16:12 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:13 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:16:14 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:21 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:16:21 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:21 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2486 ms
+Oct 10, 2007 1:16:22 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:16:22 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:16:32 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:33 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:16:33 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/222  config=null
+Oct 10, 2007 1:16:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11799 ms
+Oct 10, 2007 1:19:15 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:19:16 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:19:16 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:19:17 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:19:18 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:19:19 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:21:57 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:430)
+	at java.net.Socket.connect(Socket.java:516)
+	at java.net.Socket.connect(Socket.java:466)
+	at java.net.Socket.<init>(Socket.java:366)
+	at java.net.Socket.<init>(Socket.java:179)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:409)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:337)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:415)
+Oct 10, 2007 1:22:08 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:22:08 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:22:08 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2197 ms
+Oct 10, 2007 1:22:08 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:22:08 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:22:19 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:22:20 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:22:20 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/227  config=null
+Oct 10, 2007 1:22:20 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12272 ms
+Oct 10, 2007 1:22:27 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:22:28 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:22:29 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:22:30 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:22:31 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:22:32 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:25:46 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:430)
+	at java.net.Socket.connect(Socket.java:516)
+	at java.net.Socket.connect(Socket.java:466)
+	at java.net.Socket.<init>(Socket.java:366)
+	at java.net.Socket.<init>(Socket.java:179)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:409)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:337)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:415)
+Oct 10, 2007 1:25:57 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:25:57 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:25:57 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2996 ms
+Oct 10, 2007 1:25:58 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:25:58 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:26:09 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:26:09 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:26:09 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/304  config=null
+Oct 10, 2007 1:26:09 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11984 ms
+Oct 10, 2007 1:26:16 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:26:17 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:26:18 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:26:19 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:26:20 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:26:21 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:16 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:430)
+	at java.net.Socket.connect(Socket.java:516)
+	at java.net.Socket.connect(Socket.java:466)
+	at java.net.Socket.<init>(Socket.java:366)
+	at java.net.Socket.<init>(Socket.java:179)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:409)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:337)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:415)
+Oct 10, 2007 1:33:24 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:33:24 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:24 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2693 ms
+Oct 10, 2007 1:33:24 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:33:24 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:33:36 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:36 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:33:37 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/219  config=null
+Oct 10, 2007 1:33:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12504 ms
+Oct 10, 2007 1:33:44 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:45 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:33:46 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:33:47 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:33:48 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:33:49 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:37 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:36:38 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:38 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2998 ms
+Oct 10, 2007 1:36:38 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:36:38 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:36:49 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:49 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:36:49 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/256  config=null
+Oct 10, 2007 1:36:50 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11788 ms
+Oct 10, 2007 1:36:56 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:57 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:36:57 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:36:58 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:36:59 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:37:01 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:39:10 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:39:11 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:39:11 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2998 ms
+Oct 10, 2007 1:39:11 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:39:11 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:39:22 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:39:23 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:39:23 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/161  config=null
+Oct 10, 2007 1:39:23 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12095 ms

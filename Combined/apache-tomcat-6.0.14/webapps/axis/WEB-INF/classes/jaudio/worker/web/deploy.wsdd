@@ -1,0 +1,32 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from NewFeatureService WSDL service -->
+
+  <service name="WorkerNewFeature" provider="java:RPC" style="wrapped" use="literal">
+  	 <requestFlow>
+  	 	<handler type="soapmonitor"/>
+  	 </requestFlow>
+  	 <responseFlow>
+  	 	<handler type="soapmonitor"/>
+  	 </responseFlow>
+      <parameter name="wsdlTargetNamespace" value="urn:WorkerNewFeature"/>
+      <parameter name="wsdlServiceElement" value="NewFeatureService"/>
+      <parameter name="schemaQualified" value="urn:WorkerNewFeature"/>
+      <parameter name="wsdlServicePort" value="WorkerNewFeature"/>
+      <parameter name="className" value="jaudio.worker.web.WorkerNewFeatureSoapBindingSkeleton"/>
+      <parameter name="wsdlPortType" value="NewFeature"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <parameter name="allowedMethods" value="*"/>
+
+  </service>
+</deployment>

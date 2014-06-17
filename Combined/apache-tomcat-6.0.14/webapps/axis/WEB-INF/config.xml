@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE configuration [
+   <!ELEMENT configuration (libraryURL,priority,maxCacheSize,onIdle,id)>
+   <!ELEMENT libraryURL (#PCDATA)>
+   <!ELEMENT priority (#PCDATA)>
+   <!ELEMENT maxCacheSize (#PCDATA)>
+   <!ELEMENT onIdle (#PCDATA)>
+   <!ELEMENT id (#PCDATA)>
+]>
+
+<configuration>
+	<libraryURL>http://127.0.0.1:8080/axis/services/</libraryURL>
+	<priority>5</priority>
+	<maxCacheSize>10240</maxCacheSize>
+	<onIdle>false</onIdle>
+	<id>16</id>
+</configuration>

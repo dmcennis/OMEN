@@ -1,0 +1,44 @@
+Common
+
+set CATALINA_HOME environment variable to location of apache-tomcat-6.0.14
+set JAVA_HOME environment variable to location of JAVA JDK
+
+Worker Config
+
+$CATALINA_HOME/webapps/axis/WEB-INF/features.xml 
+  set plugin folder to location of webapps/axis/WEB-INF/plugins
+
+$CATALINA_HOME/webapps/axis/WEB-INF/config.xml
+  set library URL to location of Library deployment
+
+
+Library config
+
+create database library
+use library.sql to populate the database
+
+$CATALINA_HOME/webapps/axis/WEB-INF/libraryconfig.xml
+set Library database url to point to the database
+
+manually add to masterURL table in database the url of the master server
+
+start tomcat
+
+login into http://127.0.0.1:8080/Library using admin id and admin password
+
+add workers and alter their settings
+
+
+Master config
+
+create database master_portal
+use master.sql to populate the database
+
+$CATALINA/webapps/axis/WEB-INF/portalconfig.xml
+set datbase URL to point to the database
+
+start tomcat
+
+login into http://127.0.0.1:8080/OMENAdmin using admin id and admin password
+
+add Libraries

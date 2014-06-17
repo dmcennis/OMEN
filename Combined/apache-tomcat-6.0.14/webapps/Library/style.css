@@ -1,0 +1,46 @@
+body{
+	background-color: #CCFFCC;
+}
+
+table.container{
+	width: 95%;
+	height: 100%;
+}
+
+tr.container{
+	text-align: center;
+}
+
+td.navContainer{
+	width: 25%;
+	align: center;
+	background-color: #AAFFAA;
+	height: 100%;
+}
+
+table.navCell{
+	width: 95%;
+}
+
+table.navCellBody{
+	width: 95%;
+	border-style: ridge;
+	border-width: medium;
+}
+
+tr.titleCellBody{
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+tr.bodyCellBody{
+	background-color: #CCFFCC;
+	text-align: center;
+}
+
+td.bodyContainer{
+	background-color: #FFFFFF;
+	text-align: left;
+	height: 100%;
+	width: 75%;
+}

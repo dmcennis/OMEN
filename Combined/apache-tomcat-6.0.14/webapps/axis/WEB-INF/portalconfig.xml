@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE portal [
+<!ELEMENT portal (database)>
+<!ELEMENT database (driverName,URLName)>
+<!ELEMENT driverName (#PCDATA)>
+<!ELEMENT URLName (#PCDATA)>
+]>
+
+<portal>
+  <database>
+    <driverName>com.mysql.jdbc.Driver</driverName>
+    <URLName>jdbc:mysql://127.0.0.1/master_portal?user=_USERNAME_&amp;password=_PASSWORD_</URLName>
+  </database>
+</portal>

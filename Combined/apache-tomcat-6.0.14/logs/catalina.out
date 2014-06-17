@@ -1,0 +1,1036 @@
+Oct 10, 2007 12:45:22 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 12:45:22 PM org.apache.coyote.http11.Http11Protocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:501)
+	at org.apache.coyote.http11.Http11Protocol.init(Http11Protocol.java:177)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1059)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:677)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:792)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:518)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:538)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Oct 10, 2007 12:45:22 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:8080
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1061)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:677)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:792)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:518)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:538)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Oct 10, 2007 12:45:22 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2657 ms
+Oct 10, 2007 12:45:22 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 12:45:22 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 12:45:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Oct 10, 2007 12:45:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Oct 10, 2007 12:45:33 PM org.apache.coyote.http11.Http11Protocol start
+SEVERE: Error starting endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:501)
+	at org.apache.tomcat.util.net.JIoEndpoint.start(JIoEndpoint.java:515)
+	at org.apache.coyote.http11.Http11Protocol.start(Http11Protocol.java:204)
+	at org.apache.catalina.connector.Connector.start(Connector.java:1132)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:531)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:566)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Oct 10, 2007 12:45:33 PM org.apache.catalina.startup.Catalina start
+SEVERE: Catalina.start: 
+LifecycleException:  service.getName(): "Catalina";  Protocol handler start failed: java.net.BindException: Address already in use:8080
+	at org.apache.catalina.connector.Connector.start(Connector.java:1139)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:531)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:566)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Oct 10, 2007 12:45:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11084 ms
+Oct 10, 2007 12:45:33 PM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[8005]: 
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:359)
+	at java.net.ServerSocket.bind(ServerSocket.java:319)
+	at java.net.ServerSocket.<init>(ServerSocket.java:185)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:373)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:630)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:590)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Oct 10, 2007 12:45:33 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 12:45:33 PM org.apache.catalina.connector.Connector pause
+SEVERE: Protocol handler pause failed
+java.lang.NullPointerException
+	at org.apache.jk.server.JkMain.pause(JkMain.java:679)
+	at org.apache.jk.server.JkCoyoteHandler.pause(JkCoyoteHandler.java:153)
+	at org.apache.catalina.connector.Connector.pause(Connector.java:1074)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:563)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:616)
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:659)
+Oct 10, 2007 12:50:20 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 12:50:20 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 12:50:20 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2479 ms
+Oct 10, 2007 12:50:21 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 12:50:21 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 12:50:31 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 12:50:31 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 12:50:31 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/197  config=null
+Oct 10, 2007 12:50:31 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 10948 ms
+Canceling change file
+Canceling Delete Files
+In AlterLibraries.Add
+ID-'LocalHost' Email-'dm75@cs.waikato.ac.nz' Location-'http://127.0.0.1:8080/axis/services/'
+Oct 10, 2007 1:04:46 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:04:47 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:04:48 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:08:47 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:08:47 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:08:47 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2480 ms
+Oct 10, 2007 1:08:48 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:08:48 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:08:58 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:08:58 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:08:58 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/304  config=null
+Oct 10, 2007 1:08:59 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11304 ms
+In AlterLibraries.Add
+java.sql.SQLException: Duplicate entry 'localhost' for key 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2921)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1570)
+	at com.mysql.jdbc.ServerPreparedStatement.serverExecute(ServerPreparedStatement.java:1085)
+	at com.mysql.jdbc.ServerPreparedStatement.executeInternal(ServerPreparedStatement.java:670)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1159)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1076)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1061)
+	at omen.administrator.servlets.AlterLibraries.doPost(AlterLibraries.java:99)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at omen.administrator.servlets.UsernameFilter.doFilter(UsernameFilter.java:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+In AlterLibraries.Add
+ID-'localhost' Email-'dm75@cs.waikato.ac.nz' Location-'http://127.0.0.1:8080/axis/services/'
+Canceling Add Files
+java.lang.NullPointerException
+	at omen.library.servlets.InitDeleteFiles.doGet(InitDeleteFiles.java:74)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+java.lang.NullPointerException
+	at omen.library.servlets.InitDeleteFiles.doGet(InitDeleteFiles.java:74)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+Canceling change file
+Oct 10, 2007 1:15:58 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/OMEN]
+Oct 10, 2007 1:16:12 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:13 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:16:14 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:21 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:16:21 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:21 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2486 ms
+Oct 10, 2007 1:16:22 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:16:22 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:16:32 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:16:33 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:16:33 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/222  config=null
+Oct 10, 2007 1:16:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11799 ms
+java.lang.ClassNotFoundException: dummyFeature
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:580)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:319)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:242)
+	at jAudioFeatureExtractor.ACE.XMLParsers.FeatureListHandler.endElement(FeatureListHandler.java:91)
+	at org.apache.xerces.parsers.SAXParser.endElement(SAXParser.java:1403)
+	at org.apache.xerces.validators.common.XMLValidator.callEndElement(XMLValidator.java:1550)
+	at org.apache.xerces.framework.XMLDocumentScanner$ContentDispatcher.dispatch(XMLDocumentScanner.java:1204)
+	at org.apache.xerces.framework.XMLDocumentScanner.parseSome(XMLDocumentScanner.java:381)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1098)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1139)
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:98)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+java.lang.Exception: The /Users/mcennis/apache-tomcat-6.0.14/webapps/OMEN/WEB-INF/features.xml file must be of type feature_list.<ClassNotFoundException> Class 'dummyFeature' does not exist in the path.
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:106)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+Oct 10, 2007 1:19:15 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:19:16 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:19:16 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:19:17 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:19:18 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:19:19 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:22:08 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:22:08 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:22:08 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2197 ms
+Oct 10, 2007 1:22:08 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:22:08 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:22:19 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:22:20 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:22:20 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/227  config=null
+Oct 10, 2007 1:22:20 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12272 ms
+java.lang.ClassNotFoundException: dummyFeature
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:580)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:319)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:242)
+	at jAudioFeatureExtractor.ACE.XMLParsers.FeatureListHandler.endElement(FeatureListHandler.java:91)
+	at org.apache.xerces.parsers.SAXParser.endElement(SAXParser.java:1403)
+	at org.apache.xerces.validators.common.XMLValidator.callEndElement(XMLValidator.java:1550)
+	at org.apache.xerces.framework.XMLDocumentScanner$ContentDispatcher.dispatch(XMLDocumentScanner.java:1204)
+	at org.apache.xerces.framework.XMLDocumentScanner.parseSome(XMLDocumentScanner.java:381)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1098)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1139)
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:98)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+java.lang.Exception: The /Users/mcennis/apache-tomcat-6.0.14/webapps/OMEN/WEB-INF/features.xml file must be of type feature_list.<ClassNotFoundException> Class 'dummyFeature' does not exist in the path.
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:106)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+Oct 10, 2007 1:22:27 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:22:28 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:22:29 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:22:30 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:22:31 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:22:32 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:25:57 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:25:57 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:25:57 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2996 ms
+Oct 10, 2007 1:25:58 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:25:58 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:26:09 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:26:09 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:26:09 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/304  config=null
+Oct 10, 2007 1:26:09 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11984 ms
+java.lang.ClassNotFoundException: dummyFeature
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:580)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:319)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:242)
+	at jAudioFeatureExtractor.ACE.XMLParsers.FeatureListHandler.endElement(FeatureListHandler.java:91)
+	at org.apache.xerces.parsers.SAXParser.endElement(SAXParser.java:1403)
+	at org.apache.xerces.validators.common.XMLValidator.callEndElement(XMLValidator.java:1550)
+	at org.apache.xerces.framework.XMLDocumentScanner$ContentDispatcher.dispatch(XMLDocumentScanner.java:1204)
+	at org.apache.xerces.framework.XMLDocumentScanner.parseSome(XMLDocumentScanner.java:381)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1098)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1139)
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:98)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+java.lang.Exception: The /Users/mcennis/apache-tomcat-6.0.14/webapps/OMEN/WEB-INF/features.xml file must be of type feature_list.<ClassNotFoundException> Class 'dummyFeature' does not exist in the path.
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:106)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+Oct 10, 2007 1:26:16 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:26:17 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:26:18 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:26:19 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:26:20 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:26:21 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:24 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:33:24 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:24 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2693 ms
+Oct 10, 2007 1:33:24 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:33:24 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:33:36 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:36 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:33:37 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/219  config=null
+Oct 10, 2007 1:33:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12504 ms
+java.lang.ClassNotFoundException: dummyFeature
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:580)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:319)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:242)
+	at jAudioFeatureExtractor.ACE.XMLParsers.FeatureListHandler.endElement(FeatureListHandler.java:91)
+	at org.apache.xerces.parsers.SAXParser.endElement(SAXParser.java:1403)
+	at org.apache.xerces.validators.common.XMLValidator.callEndElement(XMLValidator.java:1550)
+	at org.apache.xerces.framework.XMLDocumentScanner$ContentDispatcher.dispatch(XMLDocumentScanner.java:1204)
+	at org.apache.xerces.framework.XMLDocumentScanner.parseSome(XMLDocumentScanner.java:381)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1098)
+	at org.apache.xerces.framework.XMLParser.parse(XMLParser.java:1139)
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:98)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+java.lang.Exception: The /Users/mcennis/apache-tomcat-6.0.14/webapps/OMEN/WEB-INF/features.xml file must be of type feature_list.<ClassNotFoundException> Class 'dummyFeature' does not exist in the path.
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:106)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+Oct 10, 2007 1:33:44 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:33:45 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:33:46 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:33:47 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:33:48 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:33:49 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:37 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:36:38 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:38 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2998 ms
+Oct 10, 2007 1:36:38 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:36:38 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:36:49 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:49 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:36:49 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/256  config=null
+Oct 10, 2007 1:36:50 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11788 ms
+java.lang.Exception: The /Users/mcennis/apache-tomcat-6.0.14/webapps/OMEN/WEB-INF/features.xml file must be of type feature_list.Plugin location not a valid URL:/Users/mcennis/apache-tomcat-6.0.14/webapps/OMEN/WEB-INF/plugins/
+	at jAudioFeatureExtractor.ACE.XMLParsers.XMLDocumentParser.parseXMLDocument(XMLDocumentParser.java:106)
+	at jAudioFeatureExtractor.DataModel.<init>(DataModel.java:168)
+	at omen.researcher.CreateSettings.doGet(CreateSettings.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:175)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:128)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:263)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:844)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:584)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:447)
+	at java.lang.Thread.run(Thread.java:613)
+Oct 10, 2007 1:36:56 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:36:57 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 10, 2007 1:36:57 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:36:58 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:36:59 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Oct 10, 2007 1:37:01 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:39:10 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 10, 2007 1:39:11 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:39:11 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2998 ms
+Oct 10, 2007 1:39:11 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 10, 2007 1:39:11 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 10, 2007 1:39:22 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Oct 10, 2007 1:39:23 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Oct 10, 2007 1:39:23 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/161  config=null
+Oct 10, 2007 1:39:23 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12095 ms
+OverallStats
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Succesfully Added settings
+Starting reload of status object
+OutputType: ARFF
+Choosing ARFF
+Location: http://127.0.0.1:8080/axis/services/
+Executing Update
+Work sent to worker http://127.0.0.1:8080/axis/services/.
+Adding file 58048
+Adding file 58049
+File not in repository - adding 77975
+Executing Update
+Batch 0 :<OK>Operations completed sucessfuly</OK>
+Starting Execution of Batch
+http://127.0.0.1:8080/axis/services/LibraryPublishResult
+http://127.0.0.1:8080/axis/services/PublishResult
+Starting publish
+Starting PublishResult
+Processing Library request - localhost
+Publishing ARFF
+PublishResult completed successfully
+<OK>All operations completed succesfully</OK>
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Oct 11, 2007 1:32:43 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Oct 11, 2007 1:32:43 PM org.apache.coyote.http11.Http11Protocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:501)
+	at org.apache.coyote.http11.Http11Protocol.init(Http11Protocol.java:177)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1059)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:677)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:792)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:518)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:538)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Oct 11, 2007 1:32:43 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:8080
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1061)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:677)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:792)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:518)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:538)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Oct 11, 2007 1:32:43 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2547 ms
+Oct 11, 2007 1:32:44 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 11, 2007 1:32:44 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.14
+Oct 11, 2007 1:33:02 PM org.apache.coyote.http11.Http11Protocol start
+SEVERE: Error starting endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.init(JIoEndpoint.java:501)
+	at org.apache.tomcat.util.net.JIoEndpoint.start(JIoEndpoint.java:515)
+	at org.apache.coyote.http11.Http11Protocol.start(Http11Protocol.java:204)
+	at org.apache.catalina.connector.Connector.start(Connector.java:1132)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:531)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:566)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Oct 11, 2007 1:33:02 PM org.apache.catalina.startup.Catalina start
+SEVERE: Catalina.start: 
+LifecycleException:  service.getName(): "Catalina";  Protocol handler start failed: java.net.BindException: Address already in use:8080
+	at org.apache.catalina.connector.Connector.start(Connector.java:1139)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:531)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:566)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Oct 11, 2007 1:33:02 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 18558 ms
+Oct 11, 2007 1:33:02 PM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[8005]: 
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:359)
+	at java.net.ServerSocket.bind(ServerSocket.java:319)
+	at java.net.ServerSocket.<init>(ServerSocket.java:185)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:373)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:630)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:590)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:288)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:413)
+Oct 11, 2007 1:33:02 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 11, 2007 1:33:02 PM org.apache.catalina.connector.Connector pause
+SEVERE: Protocol handler pause failed
+java.lang.NullPointerException
+	at org.apache.jk.server.JkMain.pause(JkMain.java:679)
+	at org.apache.jk.server.JkCoyoteHandler.pause(JkCoyoteHandler.java:153)
+	at org.apache.catalina.connector.Connector.pause(Connector.java:1074)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:563)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:616)
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:659)
+Oct 11, 2007 1:33:03 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 11, 2007 1:33:06 PM org.apache.catalina.connector.MapperListener destroy
+WARNING: Error unregistering MBeanServerDelegate
+java.lang.NullPointerException
+	at org.apache.catalina.connector.MapperListener.destroy(MapperListener.java:162)
+	at org.apache.catalina.connector.Connector.stop(Connector.java:1180)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:593)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:616)
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:659)
+Oct 11, 2007 1:33:06 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Oct 11, 2007 1:33:06 PM org.apache.catalina.connector.Connector stop
+SEVERE: Coyote connector has not been started
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+OutputType: ARFF
+Choosing ARFF
+Location: http://127.0.0.1:8080/axis/services/
+Executing Update
+Work sent to worker http://127.0.0.1:8080/axis/services/.
+File 77975 found - using cached copy
+Starting Execution of Batch
+Batch 0 :<OK>Operations completed sucessfuly</OK>
+Executing Update
+http://127.0.0.1:8080/axis/services/LibraryPublishResult
+http://127.0.0.1:8080/axis/services/PublishResult
+Starting publish
+Starting PublishResult
+Processing Library request - localhost
+Publishing ARFF
+PublishResult completed successfully
+<OK>All operations completed succesfully</OK>
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Executing Update
+Oct 13, 2007 6:19:08 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Oct 13, 2007 6:19:09 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 13, 2007 6:19:10 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080

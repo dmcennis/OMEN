@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app  xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+   <distributable/>
+
+    <!--
+    To use non XDoclet filters, create a filters.xml file that
+    contains the additional filters (eg Sitemesh) and place it in your
+    project's merge dir.  Don't include filter-mappings in this file,
+    include them in a file called filter-mappings.xml and put that in
+    the same directory.
+    -->
+
+    <!--
+    To use non XDoclet filter-mappings, create a filter-mappings.xml file that
+    contains the additional filter-mappings and place it in your
+    project's merge dir.
+    -->
+
+    <!--
+    To use non XDoclet listeners, create a listeners.xml file that
+    contains the additional listeners and place it in your
+    project's merge dir.
+    -->
+
+   <servlet>
+      <display-name>ViewIncompleteResults</display-name>
+      <servlet-name>ViewIncompleteResults</servlet-name>
+      <servlet-class>omen.researcher.ViewIncompleteResults</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoResearcher</display-name>
+      <servlet-name>DoResearcher</servlet-name>
+      <servlet-class>omen.researcher.DoResearcher</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>StartAnalysis</display-name>
+      <servlet-name>StartAnalysis</servlet-name>
+      <servlet-class>omen.researcher.StartAnalysis</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageAccount</display-name>
+      <servlet-name>ManageAccount</servlet-name>
+      <servlet-class>omen.researcher.ManageAccount</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>CreateSettings</display-name>
+      <servlet-name>CreateSettings</servlet-name>
+      <servlet-class>omen.researcher.CreateSettings</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ChooseAnalysisComponents</display-name>
+      <servlet-name>ChooseAnalysisComponents</servlet-name>
+      <servlet-class>omen.researcher.ChooseAnalysisComponents</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>Delete</display-name>
+      <servlet-name>Delete</servlet-name>
+      <servlet-class>omen.researcher.Delete</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoDisclaimer</display-name>
+      <servlet-name>DoDisclaimer</servlet-name>
+      <servlet-class>omen.researcher.DoDisclaimer</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>GetValueZip</display-name>
+      <servlet-name>GetValueZip</servlet-name>
+      <servlet-class>omen.researcher.GetValueZip</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>PrepareAnalysis</display-name>
+      <servlet-name>PrepareAnalysis</servlet-name>
+      <servlet-class>omen.researcher.PrepareAnalysis</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>GetValue</display-name>
+      <servlet-name>GetValue</servlet-name>
+      <servlet-class>omen.researcher.GetValue</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ReceiveSettings</display-name>
+      <servlet-name>ReceiveSettings</servlet-name>
+      <servlet-class>omen.researcher.ReceiveSettings</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ExecuteQuery</display-name>
+      <servlet-name>ExecuteQuery</servlet-name>
+      <servlet-class>omen.researcher.ExecuteQuery</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DefineSettings</display-name>
+      <servlet-name>DefineSettings</servlet-name>
+      <servlet-class>omen.researcher.DefineSettings</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ViewSettings</display-name>
+      <servlet-name>ViewSettings</servlet-name>
+      <servlet-class>omen.researcher.ViewSettings</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DeleteEntries</display-name>
+      <servlet-name>DeleteEntries</servlet-name>
+      <servlet-class>omen.researcher.DeleteEntries</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>SaveSettings</display-name>
+      <servlet-name>SaveSettings</servlet-name>
+      <servlet-class>omen.researcher.SaveSettings</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>SimpleQuery</display-name>
+      <servlet-name>SimpleQuery</servlet-name>
+      <servlet-class>omen.researcher.SimpleQuery</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>GetKey</display-name>
+      <servlet-name>GetKey</servlet-name>
+      <servlet-class>omen.researcher.GetKey</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterAccount</display-name>
+      <servlet-name>AlterAccount</servlet-name>
+      <servlet-class>omen.researcher.AlterAccount</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoAnalysis</display-name>
+      <servlet-name>DoAnalysis</servlet-name>
+      <servlet-class>omen.researcher.DoAnalysis</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DispatchQuery</display-name>
+      <servlet-name>DispatchQuery</servlet-name>
+      <servlet-class>omen.researcher.DispatchQuery</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ListEntries</display-name>
+      <servlet-name>ListEntries</servlet-name>
+      <servlet-class>omen.researcher.ListEntries</servlet-class>
+
+   </servlet>
+   <servlet>
+      <servlet-name>ViewResults</servlet-name>
+      <servlet-class>omen.researcher.ViewResults</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>UploadFeature</display-name>
+      <servlet-name>UploadFeature</servlet-name>
+      <servlet-class>omen.researcher.UploadFeature</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>InitUploadFeature</display-name>
+      <servlet-name>InitUploadFeature</servlet-name>
+      <servlet-class>omen.researcher.InitUploadFeature</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>LogOut</display-name>
+      <servlet-name>LogOut</servlet-name>
+      <servlet-class>omen.researcher.LogOut</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoLogin</display-name>
+      <servlet-name>DoLogin</servlet-name>
+      <servlet-class>omen.researcher.DoLogin</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoRegister</display-name>
+      <servlet-name>DoRegister</servlet-name>
+      <servlet-class>omen.researcher.DoRegister</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ViewQuery</display-name>
+      <servlet-name>ViewQuery</servlet-name>
+      <servlet-class>omen.researcher.ViewQuery</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>SaveQuery</display-name>
+      <servlet-name>SaveQuery</servlet-name>
+      <servlet-class>omen.researcher.SaveQuery</servlet-class>
+
+   </servlet>
+
+  <!--
+  To use non XDoclet servlets, create a servlets.xml file that
+  contains the additional servlets (eg Struts) and place it in your
+  project's merge dir.  Don't include servlet-mappings in this file,
+  include them in a file called servlet-mappings.xml and put that in
+  the same directory.
+  -->
+
+   <servlet-mapping>
+      <servlet-name>ViewIncompleteResults</servlet-name>
+      <url-pattern>/ViewIncompleteResults</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoResearcher</servlet-name>
+      <url-pattern>/DoResearcher</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>StartAnalysis</servlet-name>
+      <url-pattern>/StartAnalysis</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageAccount</servlet-name>
+      <url-pattern>/ManageAccount</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>CreateSettings</servlet-name>
+      <url-pattern>/CreateSettings</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ChooseAnalysisComponents</servlet-name>
+      <url-pattern>/ChooseAnalysisComponents</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>Delete</servlet-name>
+      <url-pattern>/Delete</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoDisclaimer</servlet-name>
+      <url-pattern>/DoDisclaimer</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>GetValueZip</servlet-name>
+      <url-pattern>/GetValueZip</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>PrepareAnalysis</servlet-name>
+      <url-pattern>/PrepareAnalysis</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>GetValue</servlet-name>
+      <url-pattern>/GetValue</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ReceiveSettings</servlet-name>
+      <url-pattern>/ReceiveSettings</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ExecuteQuery</servlet-name>
+      <url-pattern>/ExecuteQuery</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DefineSettings</servlet-name>
+      <url-pattern>/DefineSettings</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ViewSettings</servlet-name>
+      <url-pattern>/ViewSettings</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DeleteEntries</servlet-name>
+      <url-pattern>/DeleteEntries</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>SaveSettings</servlet-name>
+      <url-pattern>/SaveSettings</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>SimpleQuery</servlet-name>
+      <url-pattern>/SimpleQuery</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>GetKey</servlet-name>
+      <url-pattern>/GetKey</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterAccount</servlet-name>
+      <url-pattern>/AlterAccount</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoAnalysis</servlet-name>
+      <url-pattern>/DoAnalysis</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DispatchQuery</servlet-name>
+      <url-pattern>/DispatchQuery</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ListEntries</servlet-name>
+      <url-pattern>/ListEntries</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ViewResults</servlet-name>
+      <url-pattern>/ViewResults</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>UploadFeature</servlet-name>
+      <url-pattern>/UploadFeature</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>InitUploadFeature</servlet-name>
+      <url-pattern>/InitUploadFeature</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>LogOut</servlet-name>
+      <url-pattern>/LogOut</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoLogin</servlet-name>
+      <url-pattern>/DoLogin</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoRegister</servlet-name>
+      <url-pattern>/DoRegister</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ViewQuery</servlet-name>
+      <url-pattern>/ViewQuery</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>SaveQuery</servlet-name>
+      <url-pattern>/SaveQuery</url-pattern>
+   </servlet-mapping>
+
+   <!--
+   To specify mime mappings, create a file named mime-mappings.xml, put it in your project's mergedir.
+   Organize mime-mappings.xml following this DTD slice:
+
+   <!ELEMENT mime-mapping (extension, mime-type)>
+   -->
+
+   <!--
+   To specify error pages, create a file named error-pages.xml, put it in your project's mergedir.
+   Organize error-pages.xml following this DTD slice:
+
+   <!ELEMENT error-page ((error-code | exception-type), location)>
+   -->
+
+  <!--
+  To add taglibs by xml, create a file called taglibs.xml and place it
+  in your merge dir.
+  -->
+
+   <!--
+   To set up security settings for your web app, create a file named web-security.xml, put it in your project's mergedir.
+   Organize web-security.xml following this DTD slice:
+
+   <!ELEMENT security-constraint (display-name?, web-resource-collection+, auth-constraint?, user-data-constraint?)>
+   <!ELEMENT web-resource-collection (web-resource-name, description?, url-pattern*, http-method*)>
+   <!ELEMENT web-resource-name (#PCDATA)>
+   <!ELEMENT url-pattern (#PCDATA)>
+   <!ELEMENT http-method (#PCDATA)>
+   <!ELEMENT user-data-constraint (description?, transport-guarantee)>
+   <!ELEMENT transport-guarantee (#PCDATA)>
+
+   <!ELEMENT login-config (auth-method?, realm-name?, form-login-config?)>
+   <!ELEMENT auth-method (#PCDATA)>
+   <!ELEMENT realm-name (#PCDATA)>
+   <!ELEMENT form-login-config (form-login-page, form-error-page)>
+   <!ELEMENT form-login-page (#PCDATA)>
+   <!ELEMENT form-error-page (#PCDATA)>
+   -->
+
+</web-app>

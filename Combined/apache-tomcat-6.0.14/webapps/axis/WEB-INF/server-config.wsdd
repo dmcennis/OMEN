@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+ <globalConfiguration>
+  <parameter name="sendMultiRefs" value="true"/>
+  <parameter name="disablePrettyXML" value="true"/>
+  <parameter name="adminPassword" value="admin"/>
+  <parameter name="attachments.Directory" value="/Network/Servers/borges.mt.lan/Volumes/home/mcennis/source/jakarta-tomcat-5.5.9/webapps/axis/WEB-INF/attachments"/>
+  <parameter name="dotNetSoapEncFix" value="true"/>
+  <parameter name="enableNamespacePrefixOptimization" value="true"/>
+  <parameter name="sendXMLDeclaration" value="true"/>
+  <parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <parameter name="sendXsiTypes" value="true"/>
+  <requestFlow>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="session"/>
+   </handler>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="request"/>
+    <parameter name="extension" value=".jwr"/>
+   </handler>
+  </requestFlow>
+ </globalConfiguration>
+ <handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <service name="PublishResult" provider="java:MSG" style="message" use="literal">
+  <parameter name="allowedMethods" value="publishResult"/>
+  <parameter name="className" value="jaudio.web.PublishResult"/>
+  <parameter name="sendXsiTypes" value="false"/>
+  <parameter name="sendMultiRefs" value="false"/>
+ </service>
+ <service name="LibraryNotifyAnalysisFailure" provider="java:RPC" style="wrapped" use="literal">
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="wsdlServicePort" value="LibraryNotifyAnalysisFailure"/>
+  <parameter name="schemaQualified" value="urn:LibraryNotifyAnalysisFailure"/>
+  <parameter name="className" value="jaudio.library.web.LibraryNotifyAnalysisFailureSoapBindingSkeleton"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlPortType" value="LibraryNotifyAnalysisFailure"/>
+  <parameter name="wsdlServiceElement" value="LibraryNotifyAnalysisFailureService"/>
+  <parameter name="wsdlTargetNamespace" value="urn:LibraryNotifyAnalysisFailure"/>
+  <parameter name="sendXsiTypes" value="false"/>
+ </service>
+ <service name="Reset" provider="java:RPC" style="wrapped" use="literal">
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="wsdlServicePort" value="Reset"/>
+  <parameter name="schemaQualified" value="urn:Reset"/>
+  <parameter name="className" value="jaudio.worker.web.ResetSoapBindingSkeleton"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlPortType" value="Reset"/>
+  <parameter name="wsdlServiceElement" value="ResetService"/>
+  <parameter name="wsdlTargetNamespace" value="urn:Reset"/>
+  <parameter name="sendXsiTypes" value="false"/>
+ </service>
+ <service name="LibraryNewFeature" provider="java:RPC" style="wrapped" use="literal">
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="wsdlServicePort" value="LibraryNewFeature"/>
+  <parameter name="schemaQualified" value="urn:LibraryNewFeature"/>
+  <parameter name="className" value="jaudio.library.web.LibraryNewFeatureSoapBindingSkeleton"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlTargetNamespace" value="urn:LibraryNewFeature"/>
+  <parameter name="wsdlServiceElement" value="NewFeatureService"/>
+  <parameter name="wsdlPortType" value="NewFeature"/>
+  <parameter name="sendXsiTypes" value="false"/>
+ </service>
+ <service name="ApplySettings" provider="java:RPC" style="wrapped" use="literal">
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="wsdlServicePort" value="ApplySettings"/>
+  <parameter name="schemaQualified" value="urn:ApplySettings"/>
+  <parameter name="className" value="jaudio.worker.web.ApplySettingsSoapBindingSkeleton"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlTargetNamespace" value="urn:ApplySettings"/>
+  <parameter name="wsdlServiceElement" value="ApplySettingsService"/>
+  <parameter name="wsdlPortType" value="ApplySettings"/>
+  <parameter name="sendXsiTypes" value="false"/>
+ </service>
+ <service name="Music" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlPortType" value="Music"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="wsdlServicePort" value="Music"/>
+  <parameter name="className" value="jaudio.library.web.MusicSoapBindingSkeleton"/>
+  <parameter name="wsdlTargetNamespace" value="urn:LibraryGetFile"/>
+  <parameter name="wsdlServiceElement" value="MusicService"/>
+ </service>
+ <service name="WorkerExecuteBatch" provider="java:MSG" style="message" use="literal">
+  <parameter name="allowedMethods" value="execute"/>
+  <parameter name="className" value="jaudio.worker.web.WorkerExecuteBatch"/>
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="sendXsiTypes" value="false"/>
+ </service>
+ <service name="Version" provider="java:RPC">
+  <parameter name="allowedMethods" value="getVersion"/>
+  <parameter name="className" value="org.apache.axis.Version"/>
+ </service>
+ <service name="ExecuteBatch" provider="java:MSG" style="message" use="literal">
+  <parameter name="allowedMethods" value="execute"/>
+  <parameter name="className" value="jaudio.library.web.ExecuteBatch"/>
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="sendXsiTypes" value="false"/>
+ </service>
+ <service name="FileChange" provider="java:RPC" style="wrapped" use="literal">
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="wsdlServicePort" value="FileChange"/>
+  <parameter name="schemaQualified" value="urn:FileChange,http://jaudio"/>
+  <parameter name="className" value="jaudio.web.FileChangeSoapBindingSkeleton"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlTargetNamespace" value="urn:FileChange"/>
+  <parameter name="wsdlServiceElement" value="FileChangeService"/>
+  <parameter name="wsdlPortType" value="FileChange"/>
+  <parameter name="sendXsiTypes" value="false"/>
+  <typeMapping deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="" qname="ns1:FileRecord" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" type="java:jaudio.FileRecord" xmlns:ns1="http://jaudio"/>
+ </service>
+ <service name="WorkerNewFeature" provider="java:RPC" style="wrapped" use="literal">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="wsdlPortType" value="NewFeature"/>
+  <parameter name="className" value="jaudio.worker.web.WorkerNewFeatureSoapBindingSkeleton"/>
+  <parameter name="wsdlServicePort" value="WorkerNewFeature"/>
+  <parameter name="schemaQualified" value="urn:WorkerNewFeature"/>
+  <parameter name="wsdlTargetNamespace" value="urn:WorkerNewFeature"/>
+  <parameter name="wsdlServiceElement" value="NewFeatureService"/>
+ </service>
+ <service name="LibraryPublishResult" provider="java:MSG" style="message" use="literal">
+  <parameter name="allowedMethods" value="execute"/>
+  <parameter name="className" value="jaudio.library.web.LibraryPublishResult"/>
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="sendXsiTypes" value="false"/>
+ </service>
+ <transport name="http">
+  <requestFlow>
+   <handler type="URLMapper"/>
+   <handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </requestFlow>
+  <parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </transport>
+ <transport name="local">
+  <responseFlow>
+   <handler type="LocalResponder"/>
+  </responseFlow>
+ </transport>
+</deployment>

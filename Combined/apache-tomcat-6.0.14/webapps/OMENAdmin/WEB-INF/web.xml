@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app  xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+   <distributable/>
+
+    <!--
+    To use non XDoclet filters, create a filters.xml file that
+    contains the additional filters (eg Sitemesh) and place it in your
+    project's merge dir.  Don't include filter-mappings in this file,
+    include them in a file called filter-mappings.xml and put that in
+    the same directory.
+    -->
+
+   <filter>
+      <filter-name>UsernameFilter</filter-name>
+      <filter-class>omen.administrator.servlets.UsernameFilter</filter-class>
+   </filter>
+
+    <!--
+    To use non XDoclet filter-mappings, create a filter-mappings.xml file that
+    contains the additional filter-mappings and place it in your
+    project's merge dir.
+    -->
+   <filter-mapping>
+      <filter-name>UsernameFilter</filter-name>
+      <url-pattern>/Protected/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+   </filter-mapping>
+
+    <!--
+    To use non XDoclet listeners, create a listeners.xml file that
+    contains the additional listeners and place it in your
+    project's merge dir.
+    -->
+
+   <servlet>
+      <display-name>AlterLibraries</display-name>
+      <servlet-name>AlterLibraries</servlet-name>
+      <servlet-class>omen.administrator.servlets.AlterLibraries</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DownloadFeature</display-name>
+      <servlet-name>DownloadFeature</servlet-name>
+      <servlet-class>omen.administrator.servlets.DownloadFeature</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>InitPublishFeatures</display-name>
+      <servlet-name>InitPublishFeatures</servlet-name>
+      <servlet-class>omen.administrator.servlets.InitPublishFeatures</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoHome</display-name>
+      <servlet-name>DoHome</servlet-name>
+      <servlet-class>omen.administrator.servlets.DoHome</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageLibraries</display-name>
+      <servlet-name>ManageLibraries</servlet-name>
+      <servlet-class>omen.administrator.servlets.ManageLibraries</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterData</display-name>
+      <servlet-name>AlterData</servlet-name>
+      <servlet-class>omen.administrator.servlets.AlterData</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>RejectFeature</display-name>
+      <servlet-name>RejectFeature</servlet-name>
+      <servlet-class>omen.administrator.servlets.RejectFeature</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AcceptFeature</display-name>
+      <servlet-name>AcceptFeature</servlet-name>
+      <servlet-class>omen.administrator.servlets.AcceptFeature</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>LogOut</display-name>
+      <servlet-name>LogOut</servlet-name>
+      <servlet-class>omen.administrator.servlets.LogOut</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterResearchers</display-name>
+      <servlet-name>AlterResearchers</servlet-name>
+      <servlet-class>omen.administrator.servlets.AlterResearchers</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManagePublishFeature</display-name>
+      <servlet-name>ManagePublishFeature</servlet-name>
+      <servlet-class>omen.administrator.servlets.ManagePublishFeature</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageData</display-name>
+      <servlet-name>ManageData</servlet-name>
+      <servlet-class>omen.administrator.servlets.ManageData</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageAccount</display-name>
+      <servlet-name>ManageAccount</servlet-name>
+      <servlet-class>omen.administrator.servlets.ManageAccount</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoLogin</display-name>
+      <servlet-name>DoLogin</servlet-name>
+      <servlet-class>omen.administrator.servlets.DoLogin</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterAccount</display-name>
+      <servlet-name>AlterAccount</servlet-name>
+      <servlet-class>omen.administrator.servlets.AlterAccount</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageResearchers</display-name>
+      <servlet-name>ManageResearchers</servlet-name>
+      <servlet-class>omen.administrator.servlets.ManageResearchers</servlet-class>
+
+   </servlet>
+
+  <!--
+  To use non XDoclet servlets, create a servlets.xml file that
+  contains the additional servlets (eg Struts) and place it in your
+  project's merge dir.  Don't include servlet-mappings in this file,
+  include them in a file called servlet-mappings.xml and put that in
+  the same directory.
+  -->
+
+   <servlet-mapping>
+      <servlet-name>AlterLibraries</servlet-name>
+      <url-pattern>/Protected/AlterLibraries</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DownloadFeature</servlet-name>
+      <url-pattern>/Protected/DownloadFeature</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>InitPublishFeatures</servlet-name>
+      <url-pattern>/Protected/InitPublishFeatures</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoHome</servlet-name>
+      <url-pattern>/Protected/DoHome</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageLibraries</servlet-name>
+      <url-pattern>/Protected/ManageLibraries</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterData</servlet-name>
+      <url-pattern>/Protected/AlterData</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>RejectFeature</servlet-name>
+      <url-pattern>/Protected/RejectFeature</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AcceptFeature</servlet-name>
+      <url-pattern>/Protected/AcceptFeature</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>LogOut</servlet-name>
+      <url-pattern>/LogOut</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterResearchers</servlet-name>
+      <url-pattern>/Protected/AlterResearchers</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManagePublishFeature</servlet-name>
+      <url-pattern>/Protected/ManagePublishFeature</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageData</servlet-name>
+      <url-pattern>/Protected/ManageData</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageAccount</servlet-name>
+      <url-pattern>/Protected/ManageAccount</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoLogin</servlet-name>
+      <url-pattern>/DoLogin</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterAccount</servlet-name>
+      <url-pattern>/Protected/AlterAccount</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageResearchers</servlet-name>
+      <url-pattern>/Protected/ManageResearchers</url-pattern>
+   </servlet-mapping>
+
+   <!--
+   To specify mime mappings, create a file named mime-mappings.xml, put it in your project's mergedir.
+   Organize mime-mappings.xml following this DTD slice:
+
+   <!ELEMENT mime-mapping (extension, mime-type)>
+   -->
+
+   <!--
+   To specify error pages, create a file named error-pages.xml, put it in your project's mergedir.
+   Organize error-pages.xml following this DTD slice:
+
+   <!ELEMENT error-page ((error-code | exception-type), location)>
+   -->
+
+  <!--
+  To add taglibs by xml, create a file called taglibs.xml and place it
+  in your merge dir.
+  -->
+
+   <!--
+   To set up security settings for your web app, create a file named web-security.xml, put it in your project's mergedir.
+   Organize web-security.xml following this DTD slice:
+
+   <!ELEMENT security-constraint (display-name?, web-resource-collection+, auth-constraint?, user-data-constraint?)>
+   <!ELEMENT web-resource-collection (web-resource-name, description?, url-pattern*, http-method*)>
+   <!ELEMENT web-resource-name (#PCDATA)>
+   <!ELEMENT url-pattern (#PCDATA)>
+   <!ELEMENT http-method (#PCDATA)>
+   <!ELEMENT user-data-constraint (description?, transport-guarantee)>
+   <!ELEMENT transport-guarantee (#PCDATA)>
+
+   <!ELEMENT login-config (auth-method?, realm-name?, form-login-config?)>
+   <!ELEMENT auth-method (#PCDATA)>
+   <!ELEMENT realm-name (#PCDATA)>
+   <!ELEMENT form-login-config (form-login-page, form-error-page)>
+   <!ELEMENT form-login-page (#PCDATA)>
+   <!ELEMENT form-error-page (#PCDATA)>
+   -->
+
+</web-app>

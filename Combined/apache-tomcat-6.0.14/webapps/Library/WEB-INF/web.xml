@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app  xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+   <distributable/>
+
+    <!--
+    To use non XDoclet filters, create a filters.xml file that
+    contains the additional filters (eg Sitemesh) and place it in your
+    project's merge dir.  Don't include filter-mappings in this file,
+    include them in a file called filter-mappings.xml and put that in
+    the same directory.
+    -->
+
+    <!--
+    To use non XDoclet filter-mappings, create a filter-mappings.xml file that
+    contains the additional filter-mappings and place it in your
+    project's merge dir.
+    -->
+
+    <!--
+    To use non XDoclet listeners, create a listeners.xml file that
+    contains the additional listeners and place it in your
+    project's merge dir.
+    -->
+
+   <servlet>
+      <display-name>AlterAccounts</display-name>
+      <servlet-name>AlterAccounts</servlet-name>
+      <servlet-class>omen.library.servlets.AlterAccounts</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>UploadiTunes</display-name>
+      <servlet-name>UploadiTunes</servlet-name>
+      <servlet-class>omen.library.servlets.UploadiTunes</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageAccounts</display-name>
+      <servlet-name>ManageAccounts</servlet-name>
+      <servlet-class>omen.library.servlets.ManageAccounts</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterHours</display-name>
+      <servlet-name>AlterHours</servlet-name>
+      <servlet-class>omen.library.servlets.AlterHours</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoLogin</display-name>
+      <servlet-name>DoLogin</servlet-name>
+      <servlet-class>omen.library.servlets.DoLogin</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>InitChangeFiles</display-name>
+      <servlet-name>InitChangeFiles</servlet-name>
+      <servlet-class>omen.library.servlets.InitChangeFiles</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageHours</display-name>
+      <servlet-name>ManageHours</servlet-name>
+      <servlet-class>omen.library.servlets.ManageHours</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DispatcherAddFiles</display-name>
+      <servlet-name>DispatcherAddFiles</servlet-name>
+      <servlet-class>omen.library.servlets.DispatcherAddFiles</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DoHome</display-name>
+      <servlet-name>DoHome</servlet-name>
+      <servlet-class>omen.library.servlets.DoHome</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>InitAddFiles</display-name>
+      <servlet-name>InitAddFiles</servlet-name>
+      <servlet-class>omen.library.servlets.InitAddFiles</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterQueue</display-name>
+      <servlet-name>AlterQueue</servlet-name>
+      <servlet-class>omen.library.servlets.AlterQueue</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>InitDeleteFiles</display-name>
+      <servlet-name>InitDeleteFiles</servlet-name>
+      <servlet-class>omen.library.servlets.InitDeleteFiles</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterWorkerSettings</display-name>
+      <servlet-name>AlterWorkerSettings</servlet-name>
+      <servlet-class>omen.library.servlets.AlterWorkerSettings</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DispatchDeleteFiles</display-name>
+      <servlet-name>DispatchDeleteFiles</servlet-name>
+      <servlet-class>omen.library.servlets.DispatchDeleteFiles</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>DispatcherChangeFiles</display-name>
+      <servlet-name>DispatcherChangeFiles</servlet-name>
+      <servlet-class>omen.library.servlets.DispatcherChangeFiles</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageWorkers</display-name>
+      <servlet-name>ManageWorkers</servlet-name>
+      <servlet-class>omen.library.servlets.ManageWorkers</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageWorkerSettings</display-name>
+      <servlet-name>ManageWorkerSettings</servlet-name>
+      <servlet-class>omen.library.servlets.ManageWorkerSettings</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>ManageQueue</display-name>
+      <servlet-name>ManageQueue</servlet-name>
+      <servlet-class>omen.library.servlets.ManageQueue</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>LogOut</display-name>
+      <servlet-name>LogOut</servlet-name>
+      <servlet-class>omen.library.servlets.LogOut</servlet-class>
+
+   </servlet>
+   <servlet>
+      <display-name>AlterWorkers</display-name>
+      <servlet-name>AlterWorkers</servlet-name>
+      <servlet-class>omen.library.servlets.AlterWorkers</servlet-class>
+
+   </servlet>
+
+  <!--
+  To use non XDoclet servlets, create a servlets.xml file that
+  contains the additional servlets (eg Struts) and place it in your
+  project's merge dir.  Don't include servlet-mappings in this file,
+  include them in a file called servlet-mappings.xml and put that in
+  the same directory.
+  -->
+
+   <servlet-mapping>
+      <servlet-name>AlterAccounts</servlet-name>
+      <url-pattern>/AlterAccounts</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>UploadiTunes</servlet-name>
+      <url-pattern>/UploadiTunes</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageAccounts</servlet-name>
+      <url-pattern>/ManageAccounts</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterHours</servlet-name>
+      <url-pattern>/AlterHours</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoLogin</servlet-name>
+      <url-pattern>/DoLogin</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>InitChangeFiles</servlet-name>
+      <url-pattern>/InitChangeFiles</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageHours</servlet-name>
+      <url-pattern>/ManageHours</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DispatcherAddFiles</servlet-name>
+      <url-pattern>/DispatcherAddFiles</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DoHome</servlet-name>
+      <url-pattern>/DoHome</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>InitAddFiles</servlet-name>
+      <url-pattern>/InitAddFiles</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterQueue</servlet-name>
+      <url-pattern>/AlterQueue</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>InitDeleteFiles</servlet-name>
+      <url-pattern>/InitDeleteFiles</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterWorkerSettings</servlet-name>
+      <url-pattern>/AlterWorkerSettings</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DispatchDeleteFiles</servlet-name>
+      <url-pattern>/DispatchDeleteFiles</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>DispatcherChangeFiles</servlet-name>
+      <url-pattern>/DispatcherChangeFiles</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageWorkers</servlet-name>
+      <url-pattern>/ManageWorkers</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageWorkerSettings</servlet-name>
+      <url-pattern>/ManageWorkerSettings</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>ManageQueue</servlet-name>
+      <url-pattern>/ManageQueue</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>LogOut</servlet-name>
+      <url-pattern>/LogOut</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+      <servlet-name>AlterWorkers</servlet-name>
+      <url-pattern>/AlterWorkers</url-pattern>
+   </servlet-mapping>
+
+   <!--
+   To specify mime mappings, create a file named mime-mappings.xml, put it in your project's mergedir.
+   Organize mime-mappings.xml following this DTD slice:
+
+   <!ELEMENT mime-mapping (extension, mime-type)>
+   -->
+
+   <!--
+   To specify error pages, create a file named error-pages.xml, put it in your project's mergedir.
+   Organize error-pages.xml following this DTD slice:
+
+   <!ELEMENT error-page ((error-code | exception-type), location)>
+   -->
+
+  <!--
+  To add taglibs by xml, create a file called taglibs.xml and place it
+  in your merge dir.
+  -->
+
+   <!--
+   To set up security settings for your web app, create a file named web-security.xml, put it in your project's mergedir.
+   Organize web-security.xml following this DTD slice:
+
+   <!ELEMENT security-constraint (display-name?, web-resource-collection+, auth-constraint?, user-data-constraint?)>
+   <!ELEMENT web-resource-collection (web-resource-name, description?, url-pattern*, http-method*)>
+   <!ELEMENT web-resource-name (#PCDATA)>
+   <!ELEMENT url-pattern (#PCDATA)>
+   <!ELEMENT http-method (#PCDATA)>
+   <!ELEMENT user-data-constraint (description?, transport-guarantee)>
+   <!ELEMENT transport-guarantee (#PCDATA)>
+
+   <!ELEMENT login-config (auth-method?, realm-name?, form-login-config?)>
+   <!ELEMENT auth-method (#PCDATA)>
+   <!ELEMENT realm-name (#PCDATA)>
+   <!ELEMENT form-login-config (form-login-page, form-error-page)>
+   <!ELEMENT form-login-page (#PCDATA)>
+   <!ELEMENT form-error-page (#PCDATA)>
+   -->
+
+</web-app>

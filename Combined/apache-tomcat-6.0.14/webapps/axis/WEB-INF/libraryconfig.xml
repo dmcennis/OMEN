@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE library [
+<!ELEMENT library (database,masterNodeURL)>
+<!ELEMENT database (driverName,URLName)>
+<!ELEMENT driverName (#PCDATA)>
+<!ELEMENT URLName (#PCDATA)>
+]>
+
+<library>
+  <database>
+    <driverName>com.mysql.jdbc.Driver</driverName>
+    <URLName>jdbc:mysql://127.0.0.1/library?user=_USERNAME_&amp;password=_PASSWORD_</URLName>
+  </database>
+</library>
